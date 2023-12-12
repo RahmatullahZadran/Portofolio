@@ -1,0 +1,140 @@
+:root {
+  --main-bg-color: #340028;
+  --colortheme:#0f2862;
+  --border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  border: 0px solid; /* Add your desired border styles */
+  background-color:var(--colortheme);
+}
+
+.text {
+  width: 50%; /* Adjust as needed */
+  padding: 20px;
+  color: #ffffff;
+}
+h3{
+  font-size:60px;
+  font-style: italic;
+  padding: 30px 30px 30px 30px;
+  background-color: var(--main-bg-color);
+}
+
+.image {
+  width: 22%;
+  position:flex;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  background-color: #632c05;
+}
+
+nav a {
+  color:white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color:var(--main-bg-color);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products {
+  flex: 1;
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  padding: 10px;
+  flex: 0 0 200px;
+  transform: rotate(8deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: var(--border-radius);
+  background-color:var(--colortheme);
+}
+
+.card > header {
+  border-radius: 40px 40px 0px 0px;
+  padding: var(--border-radius);
+  color: #ffffff;
+  font-style: italic;
+  
+}
+
+.card > p {
+  text-align: center;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin: 5px;
+}
+
+
+
+.text {
+  width: 45%; /* Adjust width as needed */
+  padding: 20px;
+  display:list-item
+}
+h2{
+  font-style: italic;
+  display:flex;
+  padding: 30px;
+  color: #ffffff;
+  background-color:var(--main-bg-color);
+}
+
+.media {
+  width: 45%; /* Adjust width as needed */
+}
+
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
+
+.zoom {
+  transition: font-size 0.3s; /* Adding smooth transition */
+}
+
